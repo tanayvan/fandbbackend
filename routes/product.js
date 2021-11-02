@@ -81,9 +81,7 @@ router.delete(
   deleteProduct
 );
 //listing Routes
-router.get("/products", (req,res)=>{
-  res.json({hi:"I changed"})
-});
+router.get("/products",getAllProducts);
 
 router.get("/products/categories", getAllUniqueCategories);
 
